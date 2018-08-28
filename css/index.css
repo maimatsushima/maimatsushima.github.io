@@ -1,0 +1,583 @@
+body{
+  font-size: 10px;
+  line-height: 2;
+  font-weight: normal;
+  color: #6f6f6f;
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN','Helvetica Neue','Arial',sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+a:link, a:visited{
+  color: #6f6f6f;
+  text-decoration: none;
+}
+a:hover, a:active{
+  color: #6f6f6f;
+  text-decoration: none;
+}
+
+/* 画像------------------------------ */
+img{
+  max-width: 100%;
+  height: auto;
+  /* box-shadow: 0 3px 4px rgba(0,0,0,0.32); */
+}
+
+/* アニメーション------------------------------ */
+.fade-in{
+  animation: fade-in 1s forwarde ease 0s 1;
+}
+
+@keyframes fade-in {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+/* .wrap{
+width: 100%;
+} */
+
+
+/* index.html------------------------------ */
+/* header------------------------------ */
+
+header{
+  width: 100%;
+  height: 80px;
+  background-color: #000;
+}
+
+header h1{
+  text-align: center;
+}
+
+header h1 img{
+  width: 100px;
+  height: auto;
+  margin-top: 35px;
+}
+
+.nav-btn{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
+.nav-btn img{
+  width: 10px;
+  height: auto;
+  opacity: 0.6;
+}
+
+header nav{
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.9);
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+}
+
+.close-btn{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  opacity: 0.6;
+}
+
+.close-btn img{
+  width: 10px;
+  height: auto;
+}
+
+header nav .container{
+  margin-top: 80px;
+}
+
+header nav ul{
+  text-align: center;
+}
+
+header nav ul li{
+  display: block;
+  height: 64px;
+  line-height: 4.4;
+  font-family: 'Helvetica Neue Regular','Arial',sans-serif;
+  font-size: 15px;
+  color: #FFF;
+  letter-spacing: 0.1rem;
+}
+
+header nav ul li .current{
+  display: block;
+  height: 64px;
+  line-height: 4.4;
+  font-family: 'Helvetica Neue Regular','Arial',sans-serif;
+  font-size: 15px;
+  color: #FFF;
+  letter-spacing: 0.1rem;
+}
+
+/* LOOK------------------------------ */
+.look-moji{
+  position: relative;
+}
+
+.look-moji p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+  opacity: 0.4;
+  font-family: 'Inconsolata', monospace, 'Helvetica Neue Regular','Arial',sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 0.4rem;
+}
+
+.look-moji img{
+  width: 100%;
+}
+
+#look{
+  text-align: center;
+}
+
+#look img{
+  width: 60%;
+  height: auto;
+  margin-top: 40px;
+}
+
+#look h3{
+  font-size: 11px;
+  font-family: 'Helvetica Neue Regular','Arial',sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 24px;
+  color: #000;
+}
+
+#look p{
+  margin-top: 16px;
+}
+
+/* blog------------------------------ */
+
+h2{
+  margin-top: 40px;
+  font-family: 'Inconsolata', monospace, 'Helvetica Neue Regular','Arial',sans-serif;
+  text-align: center;
+  font-size: 22px;
+  color: #000;
+  font-weight: bold;
+}
+
+#blog{
+  text-align: center;
+}
+
+.blog-con{
+  margin-top: 24px;
+  width: 330px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.issue{
+  margin-top: 24px;
+  width: 150px;
+}
+
+.more{
+  margin: 24px auto 0;
+  width: 30%;
+  padding: 0.5em 1em;
+  border: solid 1px #6f6f6f;
+}
+
+.more a{
+  font-family: 'Inconsolata', monospace, 'Helvetica Neue Regular','Arial',sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* item------------------------------ */
+#item{
+  text-align: center;
+}
+
+#item h2{
+  margin-bottom: 24px;
+}
+
+.item-con{
+  line-height: 0;
+  margin-top: 24px;
+  width: 330px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* concept------------------------------ */
+#concept{
+  text-align: center;
+}
+
+.logo_blk img{
+  width: 100px;
+  height: auto;
+  margin-top: 24px;
+  opacity: 0.6;
+}
+
+#concept h3{
+  font-size: 11px;
+  font-family: 'Helvetica Neue Regular','Arial',sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 24px;
+  color: #000;
+}
+
+#concept p{
+  margin-top: 16px;
+}
+
+/* shoplist------------------------------ */
+#shop-list{
+  text-align: center;
+}
+
+.list-con{
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.left{
+  float: left;
+  width: 150px;
+}
+
+.right{
+  float: right;
+  width: 150px;
+}
+
+#shop-list ul{
+  margin-top: 24px;
+}
+
+/* sns------------------------------ */
+.sns-con{
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 40px;
+  /* position: relative; */
+}
+
+.sns-l{
+  margin-top: 24px;
+  width: 150px;
+  height: 150px;
+}
+
+.sns-r{
+  margin-top: 24px;
+  width: 150px;
+  height: 150px;
+}
+
+.sns-l a{
+  background: url(../img/blog_main.jpg) center center no-repeat;
+  background-size: 100% auto;
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 150px;
+  margin: 0;
+  padding: 0;
+  line-height: 8;
+  color: rgb(255,255,255,0.6);
+  font-family: 'Inconsolata', monospace, 'Helvetica Neue Regular','Arial',sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 0.2rem;
+}
+
+.sns-r a{
+  background: url(../img/blog_main2.jpg) center center no-repeat;
+  background-size: 100% auto;
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 150px;
+  margin: 0;
+  padding: 0;
+  line-height: 8;
+  color: rgb(255,255,255,0.6);
+  font-family: 'Inconsolata', monospace, 'Helvetica Neue Regular','Arial',sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 0.2rem;
+}
+
+/* last------------------------------ */
+.last-con{
+  width: 100%;
+  display: flex;
+  padding: 0 16px;
+  box-sizing: border-box;
+  margin: 8px 10px;
+}
+
+footer nav .logo-blk-u{
+  width: 80px;
+  height: auto;
+  margin: 24px 8px 0 0;
+  opacity: 0.6;
+}
+
+.last-con ul{
+  display: flex;
+}
+
+.last-con ul li{
+  margin-right: 10px;
+}
+
+.last-con ul li a{
+  font-family: 'Helvetica Neue Regular','Arial',sans-serif;
+  font-size: 9px;
+}
+
+.last-li{
+  margin: 18px 0 0;
+}
+
+.last-li .current{
+  font-family: 'Helvetica Neue Regular','Arial',sans-serif;
+  font-size: 9px;
+  color: #000;
+}
+
+footer p small{
+    margin: 0 8px 24px;
+    font-size: 8px;
+    color: #666;
+    letter-spacing: 0.1rem;
+    font-family: 'Helvetica Neue Regular','Arial',sans-serif;
+}
+
+
+/* blog_top.html------------------------------ */
+/* menu------------------------------ */
+#top_menu{
+  /* margin: 20px 15px; */
+  font-family: 'Inconsolata', monospace, 'Helvetica Neue Regular','Arial',sans-serif;
+  font-size: 12px;
+  padding :20px 0 0;
+    /* border-bottom: solid 1px #6f6f6f; */
+}
+
+#top_menu ul{
+  display: flex;
+  justify-content: space-around;
+  width: 100% ;
+}
+
+#visited{
+  color: #000;
+}
+
+/* blog------------------------------ */
+#blog-i{
+  text-align: center;
+  border-top: solid 1px #6f6f6f;
+  margin: 16px;
+}
+
+#blog-i figure{
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.day h3{
+  text-align: center;
+  margin-top: 16px;
+}
+
+.box{
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+}
+
+.box h3{
+  color: rgba(225,225,225,0.6);
+  background-color: #000;
+  padding: 0.5em 1em;
+  border: solid 1px #000;
+  display: block;
+  font-family: 'Inconsolata', monospace, 'Helvetica Neue Regular','Arial',sans-serif;
+}
+
+#blog-i h2{
+  margin-top: 0;
+  font-family: 'Helvetica Neue Regular','Arial',sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+#blog-i img{
+  margin-top: 16px;
+  line-height: 0;
+
+}
+
+#blog-i p{
+  text-align: left;
+}
+
+/* page------------------------------ */
+#page{
+  border-top: solid 1px #6f6f6f;
+  margin: 16px;
+}
+
+#page ul{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 20px auto;
+}
+
+#page .p-current{
+  padding: 8px 11px;
+  line-height: 1.2;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #6f6f6f;
+}
+
+#page li a{
+  padding: 8px 11px;
+  line-height: 1.2;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #6f6f6f;
+  display: block;
+}
+
+/* 20180829.html------------------------------ */
+/* blog------------------------------ */
+
+#blogin{
+  text-align: center;
+  margin: 16px 0;
+  padding: 0 16px;
+}
+
+#blogin img{
+  padding: 0 0;
+  text-align: center;
+}
+
+#blogin h2{
+  margin-top: 0;
+  font-family: 'Helvetica Neue Regular','Arial',sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+#blogin p{
+  padding: 20px 10px;
+  text-align: left;
+}
+
+.b-box h3{
+  width: 70px;
+  color: rgba(225,225,225,0.6);
+  background-color: #000;
+  padding: 0.5em 1em;
+  margin: 50px auto 0;
+  border: solid 1px #000;
+  display: block;
+  font-family: 'Inconsolata', monospace, 'Helvetica Neue Regular','Arial',sans-serif;
+}
+
+#b-item{
+  box-sizing: border-box;
+ width: 90%;
+ display: flex;
+ margin: 8px 10px;
+}
+
+.online{
+  display:flex;
+}
+
+
+/* item.html------------------------------ */
+/* menu------------------------------ */
+#item_menu{
+  margin: 20px 15px;
+  font-size: 15px;
+  font-family: 'Inconsolata', monospace, 'Helvetica Neue Regular','Arial',sans-serif;
+
+}
+
+#item_menu li{
+  margin-left: 25px;
+}
+
+#visited{
+  color: #000;
+}
+
+#item_menu ul{
+  display: flex;
+  width: 30px ;
+}
+
+/* new arrival------------------------------ */
+
+
+/* kp6222t019.html------------------------------ */
+/* 商品説明------------------------------ */
+.item-main p{
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+  opacity: 0.4;
+  font-family: 'Inconsolata', monospace, 'Helvetica Neue Regular','Arial',sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 0.2rem;
+}
