@@ -116,7 +116,7 @@ header nav ul{
   text-align: center;
 }
 
-header nav ul li{
+header .linked{
   display: block;
   height: 64px;
   line-height: 4.4;
@@ -124,9 +124,10 @@ header nav ul li{
   font-size: 15px;
   color: #FFF;
   letter-spacing: 0.1rem;
+  opacity: 0.6;
 }
 
-header nav ul li .current{
+header a{
   display: block;
   height: 64px;
   line-height: 4.4;
@@ -392,6 +393,11 @@ footer nav .logo-blk-u{
   color: #000;
 }
 
+footer p{
+  text-align: center;
+  padding-bottom: 25px;
+}
+
 footer p small{
     margin: 0 8px 24px;
     font-size: 8px;
@@ -590,7 +596,7 @@ footer p small{
 }
 
 .share img{
-  width: 50%;
+  width: 70%;
   text-align: right;
 }
 
