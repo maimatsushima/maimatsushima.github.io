@@ -20,9 +20,9 @@
     <nav>
       <div class="container">
           <ul>
-            <li><a href="#">HOME</a></li>
-            <li class="current">BLOG</li>
-            <li><a href="#">ITEM</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="blog_top.html">BLOG</a></li>
+            <li class="current">ITEM</li>
             <li><a href="#">CONCEPT</a></li>
             <li><a href="#">SHOP LIST</a></li>
           </ul>
@@ -35,7 +35,7 @@
 
 <!-- TOP -->
 
-<section id="item_menu">
+<section id="item_menu_2">
   <ul class="ul-1">
     <li ><a href="#">ALL</a></li>
     <li ><a href="#">TOPS</a></li>
@@ -48,14 +48,17 @@
     <li ><a href="#">SHOES</a></li>
     <li ><a href="#">ACCESSORY</a></li>
   </ul>
-</setion>
+</section>
 
 <!-- MENU -->
 
   <section class="item-main">
 
-  <figure><img src="img/online_2_2.jpg" alt="knit"></figure>
-  <h2>前後2wayシャツセットニット</h2>
+  <div id="knit">
+    <figure><img src="img/online_2_2.jpg" alt="knit"></figure>
+  </div>
+
+  <h2>2wayシャツニット</h2>
 
   <p>
     スリットが施されたニットとシャツがセットになった、
@@ -75,81 +78,88 @@
 
 <!-- 商品説明 -->
 
-  <div>
-    <figure><img src="img/online_2_4.jpg" alt="off"></figure>
-    <p>off</p>
+  <div class="knit_color">
+      <figure><img src="img/online_2_4.jpg" alt="off"></figure>
+      <figure><img src="img/online_2_3.jpg" alt="beg"></figure>
+      <figure><img src="img/online_2_1.jpg" alt="blk"></figure>
   </div>
-  <div>
-    <figure><img src="img/online_2_3.jpg" alt="beg"></figure>
-    <p>beige</p>
-  </div>
-  <div>
-    <figure><img src="img/online_2_1.jpg" alt="blk"></figure>
-    <p>black</p>
+
+  <div class="knit_color_moji">
+    <p>&nbsp off &nbsp</p><p>beige</p><p>black</p>
   </div>
 
 <!-- カラバリ -->
-<!--
-    <section><p>合計金額</p><p>¥8,000(税込8% ¥8,640)</p></section>
-    <section><p>カラー</p><p>off+</p></section>
-    <section><p>購入数</p><p>-1+</p></section>
-    <h4>買い物カゴへ</h4> -->
+
+    <section id="buy"><p>合計金額</p><p>¥8,000(税込8% ¥8,640)</p></section>
+    <section id="buy"><p>カラー</p><p>off+</p></section>
+    <section id="buy"><p>購入数</p><p>-1+</p></section>
+    <section id="buy-curt"><p>買い物かごへ</p></section>
 
 <!-- 購入フロー -->
-<!--
+
     <h3>このアイテムのスタッフスタイル</h3>
 
     <section id="style">
-      <p>2018/08/29</p>
-        <h4>KBF+ a/w staff style 10</h4>
+      <div class="day"><h3>2018/08/29</h3><div>
+        <h2>KBF+ a/w staff style 10</h2>
           <figure><img src="img/blog_2_6.jpg" alt="blog5"></figure>
-        <div><a href="#">+ READ MORE</a></div>
-    </section> -->
+        <div class="more"><a href="20180829.html">+ READ MORE</a></div>
+    </section>
 
 <!-- BLOGへ -->
-<!--
-  <figure><img src="img/online_2_6.jpg" alt="knit2"></figure>
-  <figure><img src="img/online_2_5.jpg" alt="knit3"></figure>
-  <figure><img src="img/online_2_10.jpg" alt="knit4"></figure>
-  <figure><img src="img/online_2_11.jpg" alt="knit5"></figure> -->
+
+  <section id="img_item">
+
+    <figure><img src="img/online_2_6.jpg" alt="knit2"></figure>
+    <figure><img src="img/online_2_5.jpg" alt="knit3"></figure>
+    <figure><img src="img/online_2_10.jpg" alt="knit4"></figure>
+    <figure><img src="img/online_2_11.jpg" alt="knit5"></figure>
+
+  </section>
 
 <!-- 詳細画像 -->
-<!--
-  <section><p>カテゴリ</p><p>トップス > ニット</p></section>
-  <section><p>モデル身長</p><p>168cm</p></section>
-  <section><p>着用サイズ</p><p>one</p></section>
-  <section><p>生産国</p><p>中国</p></section>
-  <section><p>素材</p><p>ニット：アクリル70％　毛30％</p><p>シャツ：綿100％</p></section>
-  <section><p>商品サイズ</p><p>ニット：バスト114  ゆき丈71.5  身丈53</p><p>シャツ：肩幅38  バスト98  袖丈57  身丈67</p></section> -->
+      <section id="buy"><p>カテゴリ</p><p>トップス > ニット</p></section>
+      <section id="buy"><p>モデル身長</p><p>168cm</p></section>
+      <section id="buy"><p>着用サイズ</p><p>one</p></section>
+      <section id="buy"><p>生産国</p><p>中国</p></section>
+      <section id="buy"><p>素材</p><h4>ニット：アクリル70％　毛30％<br>シャツ：綿100％</h4></section>
+      <section id="buy"><p>商品サイズ</p><h4>ニット：バスト114  ゆき丈71.5  身丈53<br>シャツ：肩幅38  バスト98  袖丈57  身丈67</h4></section>
+      <section id="buy"></section>
 
 <!-- 商品詳細 -->
-<!--
-    <footer>
-      <figure><img src="img/instagram_6.jpg" alt="instagram2"></figure>
-      <div><a href="#">@ KBFPLUS</a></div> -->
+<footer>
+
+  <div class="insta">
+          <figure><img src="img/instagram_6.jpg" alt="instagram2"></figure>
+          <div class="more"><a href="#">@ KBFPLUS</a></div>
+  </div>
+
 
 <!-- SNS -->
-
-    <nav>
-        <div class="last-con">
-          <ul>
-              <div class="logo-blk-u">
-                  <li><img src="img/plus_b.png" alt="logo-blk"></li>
-              </div>
-
-              <li class="current"><a href="#">HOME</a></li>
-              <li class="current2"><a href="#">BLOG</a></li>
-              <li class="current2"><a href="#">ITEM</a></li>
-              <li class="current2"><a href="#">CONCEPT</a></li>
-              <li class="current2"><a href="#">SHOP LIST</a></li>
-          </ul>
+<!-- <nav>
+    <div class="last-con">
+      <div class="logo-blk-u">
+          <img src="img/plus_b.png" alt="logo-blk">
       </div>
-    </nav>
-      <p><small>&copy;copyright URBAN RESEARCH Co.,Ltd. All Right Reserved</small></p>
-  </footer>
+      <div class="last-li">
+        <ul>
+            <li class="current">HOME</li>
+            <li class="current2"><a href="#">BLOG</a></li>
+            <li class="current2"><a href="#">ITEM</a></li>
+        </ul>
+        <ul>
+            <li class="current2"><a href="#">CONCEPT</a></li>
+            <li class="current2"><a href="#">SHOP LIST</a></li>
+        </ul>
+    </div>
+  </div>
+</nav> -->
+  <p><small>&copy;copyright URBAN RESEARCH Co.,Ltd. All Right Reserved</small></p>
+</footer>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/index.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/index.js"></script>
 
+<!-- </div> -->
 </body>
 </html>

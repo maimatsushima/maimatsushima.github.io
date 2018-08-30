@@ -25,7 +25,7 @@ img{
 
 /* アニメーション------------------------------ */
 .fade-in{
-  animation: fade-in 1s forwarde ease 0s 1;
+  animation: fade-in 1s forwards ease 0s 1;
 }
 
 @keyframes fade-in {
@@ -35,6 +35,13 @@ img{
   100%{
     opacity: 1;
   }
+}
+
+.fade{
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 
@@ -296,6 +303,7 @@ h2{
   justify-content: space-between;
   text-align: center;
   margin-top: 40px;
+  margin-bottom: 40px;
   /* position: relative; */
 }
 
@@ -321,7 +329,7 @@ h2{
   margin: 0;
   padding: 0;
   line-height: 8;
-  color: rgb(255,255,255,0.6);
+  color: rgba(255,255,255,0.6);
   font-family: 'Inconsolata', monospace, 'Helvetica Neue Regular','Arial',sans-serif;
   font-weight: bold;
   font-size: 15px;
@@ -338,7 +346,7 @@ h2{
   margin: 0;
   padding: 0;
   line-height: 8;
-  color: rgb(255,255,255,0.6);
+  color: rgba(255,255,255,0.6);
   font-family: 'Inconsolata', monospace, 'Helvetica Neue Regular','Arial',sans-serif;
   font-weight: bold;
   font-size: 15px;
@@ -349,7 +357,6 @@ h2{
 .last-con{
   width: 100%;
   display: flex;
-  padding: 0 16px;
   box-sizing: border-box;
   margin: 8px 10px;
 }
@@ -363,6 +370,7 @@ footer nav .logo-blk-u{
 
 .last-con ul{
   display: flex;
+  text-align: right;
 }
 
 .last-con ul li{
@@ -545,18 +553,17 @@ footer p small{
 /* menu------------------------------ */
 #item_menu{
   margin: 20px 15px;
-  font-size: 15px;
+  font-size: 13px;
   font-family: 'Inconsolata', monospace, 'Helvetica Neue Regular','Arial',sans-serif;
-
 }
 
 #item_menu li{
   margin-left: 25px;
 }
 
-#visited{
+/* #item_menu visited{
   color: #000;
-}
+} */
 
 #item_menu ul{
   display: flex;
@@ -564,20 +571,169 @@ footer p small{
 }
 
 /* new arrival------------------------------ */
+#new-a{
+  display: flex;
+  margin: 10px 10px auto;
+}
+
+.new1 {
+
+}
+
+#new-a_2{
+  margin: auto auto;
+}
+
+.share{
+  text-align: right;
+  margin-top: 32px;
+}
+
+.share img{
+  width: 50%;
+  text-align: right;
+}
+
+/* ranking------------------------------ */
+.rank {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 35px;
+  text-align: center;
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN','Helvetica Neue','Arial',sans-serif;
+  margin-bottom: 20px;
+}
+
+.rank_kazu {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-family: 'Helvetica Neue Regular','Arial',sans-serif;
+  margin-top: -15px;
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+
+/* footer2------------------------------ */
+
+.insta{
+  margin: 48px auto;
+}
 
 
 /* kp6222t019.html------------------------------ */
-/* 商品説明------------------------------ */
-.item-main p{
-  position: absolute;
-  top: 50%;
-  left: 7%;
-  margin: 0;
-  padding: 0;
-  color: #FFF;
-  opacity: 0.4;
+/* menu------------------------------ */
+#item_menu_2{
+  margin: 20px 15px;
+  font-size: 13px;
   font-family: 'Inconsolata', monospace, 'Helvetica Neue Regular','Arial',sans-serif;
-  font-weight: bold;
-  font-size: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid;
+}
+
+#item_menu_2 li{
+  margin-left: 25px;
+}
+
+#item_menu_2 ul{
+  display: flex;
+  width: 30px ;
+}
+
+
+/* 商品説明------------------------------ */
+#knit{
+  margin-top: -20px;
+}
+
+.item-main h2{
+  font-size: 14px;
+  line-height: 2;
+  font-weight: normal;
+  color: #6f6f6f;
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN','Helvetica Neue','Arial',sans-serif;
   letter-spacing: 0.2rem;
+  margin-top: -40px;
+}
+
+.item-main p{
+  font-size: 10px;
+  line-height: 2;
+  font-weight: normal;
+  color: #6f6f6f;
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN','Helvetica Neue','Arial',sans-serif;
+  letter-spacing: 0.2rem;
+  margin: 20px 37px;
+}
+
+.knit_color{
+  display: flex;
+  padding: 0 30px;
+}
+
+.knit_color_moji{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 65px;
+  text-align: center;
+  font-family: 'Helvetica Neue Regular','Arial',sans-serif;
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+
+/* 購入------------------------------ */
+#buy{
+  border-top: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 20px;
+  margin: 0 20px;
+}
+
+#buy-curt{
+  border-top: 1px solid;
+  padding: 8px 20px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+#buy-curt p{
+  width: 100px;
+  color: rgb(225,225,225);
+  background-color: #6f6f6f;
+  padding: 0.5em 1em;
+  display: block;
+  margin-left: auto;
+}
+
+/* 商品ページ内ブログ------------------------------ */
+
+h3{
+  margin-top: 20px;
+  text-align: center;
+}
+
+#style{
+  width: 90%;
+  border: solid 1px #6f6f6f;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+#style h2{
+  margin-top: 0;
+  font-family: 'Helvetica Neue Regular','Arial',sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+/* 商品詳細------------------------------ */
+#img_item img{
+  margin-top: -10px
+}
+
+#buy h4{
+  text-align: right;
+  font-size: 8px;
 }
